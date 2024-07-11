@@ -4,13 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "cross-env NODE_ENV=development nodemon app.js",
+    "start:prod": "cross-env NODE_ENV=production nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cross-env": "^7.0.3",
+    "errorhandler": "^1.5.1",
     "express": "^4.19.2",
     "mongoose": "^8.4.4",
     "morgan": "^1.10.0",
